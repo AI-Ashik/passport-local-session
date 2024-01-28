@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/", authRouter);
 
 app.get("/", (req, res) => {
-  res.sendFile(`${__dirname}/views/index.html`);
+  res.render("index");
 });
 
 app.get((req, res, next) => {
