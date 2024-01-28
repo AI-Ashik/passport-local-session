@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-#### This encryption method is also a very simple, bcrypt npm package encrypted password by hashing and salting
+#### This encryption method of passport js library, we are using passport-local for this session authentication
 
 - [Update Node](#update-node)
   - [Windows](#windows)
