@@ -4,7 +4,16 @@
 
 #### This encryption method of passport js library, we are using passport-local for this session authentication
 
-## Package used passport Main Library, passport-local for local strategy authentication, mongo-store for storing the session
+## Package used passport Main Library, passport-local for local strategy authentication, mongo-store for storing the session, express-session middleware, bcrypt for hashing,salting,authentication
+
+- [Packages](#update-node)
+  - [passport](#windows)
+  - [passport-local](#mac)
+  - [bcrypt](#mac)
+  - [mongo-store](#mac)
+  - [express-session](#mac)
+
+<hr>
 
 - [Update Node](#update-node)
   - [Windows](#windows)
