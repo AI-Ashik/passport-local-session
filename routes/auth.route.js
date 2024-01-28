@@ -1,4 +1,5 @@
 const express = require("express");
+const passport = require("passport");
 const {
   authRegister,
   Login,
@@ -17,6 +18,12 @@ router.get("/logout", Logout);
 
 // POST requests
 router.post("/register", authRegister);
-// router.post("/login", authLogin);
+router.post(
+  "/login",
+  passport.authenticate("local", {
+    failureRedirect: "/login",
+    successRedirect: "/profile",
+  })
+);
 
 module.exports = router;
