@@ -2,6 +2,7 @@ require("dotenv").config();
 require("./models/db");
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const authRouter = require("./routes/auth.route");
 
 const { PORT } = process.env;
@@ -11,6 +12,7 @@ app.set("view engine", "ejs");
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 app.use("/", authRouter);
 
 app.get("/", (req, res) => {

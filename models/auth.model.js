@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
-const authSchema = mongoose.Schema({
+const userSchema = mongoose.Schema({
   username: {
     type: String,
     required: [true, "username is required"],
@@ -15,5 +15,5 @@ const authSchema = mongoose.Schema({
   },
 });
 
-const authModel = mongoose.model("passportLocal", authSchema);
-module.exports = authModel;
+const User = mongoose.model("passportLocal", userSchema);
+module.exports = User;
